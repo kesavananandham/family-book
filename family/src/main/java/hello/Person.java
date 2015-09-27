@@ -4,6 +4,12 @@ import org.springframework.data.annotation.Id;
 
 public class Person {
 
+	public Person(String id, String firstName, String lastName) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 	@Id private String id;
 
 	private String firstName;
